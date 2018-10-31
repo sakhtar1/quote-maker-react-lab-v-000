@@ -1,7 +1,7 @@
 export function addQuote(quote){
   return {
     type: "ADD_QUOTE",
-    quoteId: quote
+    quote: quote
   }
 }
 
