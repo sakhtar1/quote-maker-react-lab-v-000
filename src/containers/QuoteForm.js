@@ -6,24 +6,40 @@ import { addQuote } from '../actions/quotes';
 class QuoteForm extends Component {
 
   state = {
+<<<<<<< HEAD
     author: '',
     content: '',
     votes: 0,
+=======
+    author:'',
+    content: ''
+>>>>>>> 6eff75e5e1b26e968924573fa8595f3ecefa5d01
   }
 
   handleOnChange = event => {
     this.setState({
+<<<<<<< HEAD
   			[event.target.name]: event.target.value
+=======
+  			state: event.target.value
+>>>>>>> 6eff75e5e1b26e968924573fa8595f3ecefa5d01
   		});
   }
 
   handleOnSubmit = event => {
     event.preventDefault();
+<<<<<<< HEAD
     this.props.addQuote({content: this.state.content, author: this.state.author});
     this.setState({
       author: '',
       content: '',
       id: uuid()
+=======
+    this.props.addQuote(this.state);
+    this.setState({
+      author:'',
+      content: ''
+>>>>>>> 6eff75e5e1b26e968924573fa8595f3ecefa5d01
   		});
   }
 
@@ -40,7 +56,10 @@ class QuoteForm extends Component {
                     <div className="col-md-5">
                       <textarea
                         className="form-control"
+<<<<<<< HEAD
                         name="content"
+=======
+>>>>>>> 6eff75e5e1b26e968924573fa8595f3ecefa5d01
                         onChange={this.handleOnChange}
                         value={this.state.content}
                       />
@@ -53,7 +72,10 @@ class QuoteForm extends Component {
                       <input
                         className="form-control"
                         type="text"
+<<<<<<< HEAD
                         name="author"
+=======
+>>>>>>> 6eff75e5e1b26e968924573fa8595f3ecefa5d01
                         onChange={this.handleOnChange}
                         value={this.state.author}
                       />

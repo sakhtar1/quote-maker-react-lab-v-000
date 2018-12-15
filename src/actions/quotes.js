@@ -9,7 +9,11 @@ export function addQuote(quote){
 export function removeQuote(quote){
   return {
     type: "REMOVE_QUOTE",
+<<<<<<< HEAD
     quoteId: quote
+=======
+    quote: quote
+>>>>>>> 6eff75e5e1b26e968924573fa8595f3ecefa5d01
   }
 }
 
